@@ -22,6 +22,9 @@ The template provides several key functionalities:
 
 If you're curious about how these features are implemented, here are more details about the app's functionalities:
 
+### Screenshot
+![img.png](img.png)
+
 ### State Management
 The app employs the BLoC Pattern to separate UI from business logic. It utilizes the flutter_bloc library to manage user inputs, application lifecycle events, and data presentation across screens. Key BLoCs include:
 
