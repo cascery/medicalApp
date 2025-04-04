@@ -1,4 +1,3 @@
-
 import 'package:doctor_app/shared/utils/time_of_day_extension.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -23,8 +22,8 @@ class DoctorDetailsScreen extends StatelessWidget {
       create: (context) => DoctorDetailsBloc(
         doctorRepository: context.read<DoctorRepository>(),
       )..add(
-        LoadDoctorDetailsEvent(doctorId: doctorId),
-      ),
+          LoadDoctorDetailsEvent(doctorId: doctorId),
+        ),
       child: const DoctorDetailsView(),
     );
   }
@@ -67,7 +66,10 @@ class DoctorDetailsView extends StatelessWidget {
             final doctor = state.doctor;
 
             if (doctor == null) {
-              return const Center(child: Text('Doctor not found.'));
+              return const Center(
+                  child: Text(
+                'Doctor not found.',
+              ));
             }
 
             return SingleChildScrollView(
@@ -76,13 +78,16 @@ class DoctorDetailsView extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   DoctorCard(doctor: state.doctor!),
-                  Divider(height: 32.0, color: colorScheme.surfaceVariant),
+                  Divider(height: 32.0, color: colorScheme.surfaceContainerHighest),
                   _DoctorWorkingHours(workingHours: doctor.workingHours),
                 ],
               ),
             );
           } else {
-            return const Center(child: Text('Something went wrong'));
+            return const Center(
+                child: Text(
+              'Something went wrong',
+            ));
           }
         },
       ),
@@ -120,19 +125,21 @@ class _DoctorWorkingHours extends StatelessWidget {
             return Row(
               children: [
                 Expanded(
-                  child: Text(workingHours[index].dayOfWeek),
+                  child: Text(
+                    workingHours[index].dayOfWeek,
+                  ),
                 ),
                 const SizedBox(width: 16.0),
                 Container(
                   padding: const EdgeInsets.all(8.0),
                   decoration: BoxDecoration(
-                    border: Border.all(color: colorScheme.surfaceVariant),
+                    border: Border.all(color: colorScheme.surfaceContainerHighest),
                     borderRadius: BorderRadius.circular(8.0),
                   ),
                   child: Text(
                     workingHours[index].startTime.toCustomString(),
                     style: textTheme.bodySmall!.copyWith(
-                      color: colorScheme.onBackground.withOpacity(.5),
+                      color: colorScheme.onSurface.withOpacity(.5),
                     ),
                   ),
                 ),
@@ -142,13 +149,13 @@ class _DoctorWorkingHours extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(8.0),
                   decoration: BoxDecoration(
-                    border: Border.all(color: colorScheme.surfaceVariant),
+                    border: Border.all(color: colorScheme.surfaceContainerHighest),
                     borderRadius: BorderRadius.circular(8.0),
                   ),
                   child: Text(
                     workingHours[index].endTime.toCustomString(),
                     style: textTheme.bodySmall!.copyWith(
-                      color: colorScheme.onBackground.withOpacity(.5),
+                      color: colorScheme.onSurface.withOpacity(.5),
                     ),
                   ),
                 ),

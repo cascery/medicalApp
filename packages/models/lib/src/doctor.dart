@@ -54,7 +54,7 @@ class Doctor extends Equatable {
       bio:
       'Dr. Momina Abid is a cardiologist in Lahore, Lahore and is affiliated with multiple hospitals in the area, including National Hospital and Cardiology Hospitals. She received her medical degree from University of Medical and Dental Sciences and has been in practice between 11-20 years. She is one of 102 doctors at National Hospital and one of 102 at Cardiology Hospital who specialize in Cardiovascular Disease.',
       profileImageUrl:
-      'https://images.unsplash.com/photo-1557683316-973673baf926',
+      'assets/icons/bubbles.jpg',
       category: DoctorCategory.familyMedicine,
       address: DoctorAddress.sampleAddresses[0],
       packages: DoctorPackage.samplePackages,
@@ -68,7 +68,7 @@ class Doctor extends Equatable {
       name: 'Dr. Kinza Khalid',
       bio: 'Dr. Kinza Khalid is a dentist in Karachi, Pakistan and is affiliated with multiple dental clinics in the area. She received her dental degree from University of Dental Sciences and has been in practice for over 10 years. ',
       profileImageUrl:
-      'https://images.unsplash.com/photo-1557683316-973673baf926',
+      'assets/icons/bubbles.jpg',
       category: DoctorCategory.dentist,
       address: DoctorAddress.sampleAddresses[0],
       packages: DoctorPackage.samplePackages,
@@ -82,7 +82,7 @@ class Doctor extends Equatable {
       name: 'Dr. Abdul Rehman Nadeeem',
       bio: 'Dr. Abdul Rehman Nadeem is a dermatologist in Karachi, Pakistan, affiliated with several local clinics. He earned his medical degree from the University of Medical Sciences and has over 10 years of experience in dermatology.',
       profileImageUrl:
-      'https://images.unsplash.com/photo-1557683316-973673baf926',
+      'assets/icons/bubbles.jpg',
       category: DoctorCategory.dermatology,
       address: DoctorAddress.sampleAddresses[0],
       packages: DoctorPackage.samplePackages,
@@ -96,7 +96,7 @@ class Doctor extends Equatable {
       name: 'Dr. Maryam Saeed',
       bio: 'Dr. Maryam Saeed is an emergency medicine specialist in Lahore, Pakistan, affiliated with Adil Hospital. She earned her medical degree from the University of Medical Sciences and has over 10 years of experience in emergency medicine. ',
       profileImageUrl:
-      'https://images.unsplash.com/photo-1557683316-973673baf926',
+      'assets/icons/bubbles.jpg',
       category: DoctorCategory.emergencyMedicine,
       address: DoctorAddress.sampleAddresses[0],
       packages: DoctorPackage.samplePackages,
@@ -110,7 +110,7 @@ class Doctor extends Equatable {
       name: 'Dr. Usman Asif',
       bio: ' Dr. Usman Asif is a dentist in Islamabad, Pakistan, affiliated with several dental clinics in the city. He received his dental degree from the University of Dental Sciences and has been in practice for over 10 years. ',
       profileImageUrl:
-      'https://images.unsplash.com/photo-1557683316-973673baf926',
+      'assets/icons/bubbles.jpg',
       category: DoctorCategory.dentist,
       address: DoctorAddress.sampleAddresses[0],
       packages: DoctorPackage.samplePackages,
@@ -124,7 +124,7 @@ class Doctor extends Equatable {
       name: 'Dr. Umna Abid',
       bio: 'Dr. Umna Abis is an anesthesiologist in Lahore, Pakistan, affiliated with multiple hospitals in the area. She received her medical degree from the University of Medical Sciences and has been in practice for over 10 years.',
       profileImageUrl:
-      'https://images.unsplash.com/photo-1557683316-973673baf926',
+      'assets/icons/bubbles.jpg',
       category: DoctorCategory.anesthesiology,
       address: DoctorAddress.sampleAddresses[0],
       packages: DoctorPackage.samplePackages,

@@ -8,7 +8,7 @@ import 'screens/home_screen.dart';
 import 'shared/theme/app_theme.dart';
 
 void main() {
-  final doctorRepository = DoctorRepository();
+  const doctorRepository = DoctorRepository();
   runApp(AppScreen(doctorRepository: doctorRepository));
 }
 

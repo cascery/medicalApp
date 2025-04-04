@@ -123,7 +123,6 @@ class HomeView extends StatelessWidget {
                 children: [
                   _DoctorCategories(),
                   SizedBox(height: 24.0),
-                  _MySchedule(),
                   SizedBox(height: 24.0),
                   _NearbyDoctors(),
                 ],
@@ -141,7 +140,7 @@ class HomeView extends StatelessWidget {
 
 //Doctor Categories section of the home screen
 class _DoctorCategories extends StatelessWidget {
-  const _DoctorCategories({super.key});
+  const _DoctorCategories();
 
   @override
   Widget build(BuildContext context) {
@@ -174,7 +173,7 @@ class _DoctorCategories extends StatelessWidget {
 
 //My schedule section of the home screen
 class _MySchedule extends StatelessWidget {
-  const _MySchedule({super.key});
+  const _MySchedule();
 
   @override
   Widget build(BuildContext context) {
@@ -193,7 +192,7 @@ class _MySchedule extends StatelessWidget {
 }
 
 class _NearbyDoctors extends StatelessWidget {
-  const _NearbyDoctors({super.key});
+  const _NearbyDoctors();
 
   @override
   Widget build(BuildContext context) {
@@ -210,16 +209,19 @@ class _NearbyDoctors extends StatelessWidget {
         ),
         ListView.separated(
           physics: const NeverScrollableScrollPhysics(),
-            shrinkWrap: true,
-            separatorBuilder: (context, index) {
-              return Divider(height: 24, color: colorScheme.surfaceVariant, );
-            },
-             itemCount: Doctor.sampleDoctors.length,
-            itemBuilder: (context, index) {
+          shrinkWrap: true,
+          separatorBuilder: (context, index) {
+            return Divider(
+              height: 24,
+              color: colorScheme.surfaceContainerHighest,
+            );
+          },
+          itemCount: Doctor.sampleDoctors.length,
+          itemBuilder: (context, index) {
             final doctor = Doctor.sampleDoctors[index];
             return DoctorListTile(doctor: doctor);
-            },
-            )
+          },
+        )
       ],
     );
   }
