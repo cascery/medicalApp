@@ -1,5 +1,4 @@
 import 'package:doctor_app/screens/doctor_details_screen.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:models/models.dart';
 

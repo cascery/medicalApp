@@ -6,7 +6,7 @@ class DoctorRepository {
       // e.g: class to connect with the DB
       );
 
-  Future <List<DoctorCategory>> fetchDoctorCategories() async {
+  Future<List<DoctorCategory>> fetchDoctorCategories() async {
     await Future.delayed(const Duration(milliseconds: 1000));
     // TODO: get those data from the DB
     return DoctorCategory.values;
@@ -24,8 +24,7 @@ class DoctorRepository {
   Future<Doctor?> fetchDoctorById(String doctorId) async {
     await Future.delayed(const Duration(milliseconds: 1000));
     return Doctor.sampleDoctors.firstWhere(
-          (doctor) => doctor.id == doctorId,
+      (doctor) => doctor.id == doctorId,
     );
   }
-
 }

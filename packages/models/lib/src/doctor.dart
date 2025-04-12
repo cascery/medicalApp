@@ -34,27 +34,25 @@ class Doctor extends Equatable {
 
   @override
   List<Object?> get props => [
-    id,
-    name,
-    bio,
-    profileImageUrl,
-    workingHours,
-    category,
-    address,
-    packages,
-    rating,
-    reviewCount,
-    patientCount,
-  ];
+        id,
+        name,
+        bio,
+        profileImageUrl,
+        workingHours,
+        category,
+        address,
+        packages,
+        rating,
+        reviewCount,
+        patientCount,
+      ];
 
   static final sampleDoctors = [
     Doctor(
       id: '1',
-      name: 'Dr. Momina Abid',
-      bio:
-      'Dr. Momina Abid is a cardiologist in Lahore, Lahore and is affiliated with multiple hospitals in the area, including National Hospital and Cardiology Hospitals. She received her medical degree from University of Medical and Dental Sciences and has been in practice between 11-20 years. She is one of 102 doctors at National Hospital and one of 102 at Cardiology Hospital who specialize in Cardiovascular Disease.',
-      profileImageUrl:
-      'assets/icons/bubbles.jpg',
+      name: 'Dr. hasna hzam',
+      bio: 'diology ',
+      profileImageUrl: 'assets/icons/bubbles.jpg',
       category: DoctorCategory.familyMedicine,
       address: DoctorAddress.sampleAddresses[0],
       packages: DoctorPackage.samplePackages,
@@ -65,10 +63,9 @@ class Doctor extends Equatable {
     ),
     Doctor(
       id: '2',
-      name: 'Dr. Kinza Khalid',
-      bio: 'Dr. Kinza Khalid is a dentist in Karachi, Pakistan and is affiliated with multiple dental clinics in the area. She received her dental degree from University of Dental Sciences and has been in practice for over 10 years. ',
-      profileImageUrl:
-      'assets/icons/bubbles.jpg',
+      name: 'Dr. nour',
+      bio: '',
+      profileImageUrl: 'assets/icons/bubbles.jpg',
       category: DoctorCategory.dentist,
       address: DoctorAddress.sampleAddresses[0],
       packages: DoctorPackage.samplePackages,
@@ -79,10 +76,9 @@ class Doctor extends Equatable {
     ),
     Doctor(
       id: '3',
-      name: 'Dr. Abdul Rehman Nadeeem',
-      bio: 'Dr. Abdul Rehman Nadeem is a dermatologist in Karachi, Pakistan, affiliated with several local clinics. He earned his medical degree from the University of Medical Sciences and has over 10 years of experience in dermatology.',
-      profileImageUrl:
-      'assets/icons/bubbles.jpg',
+      name: 'Dr. amani',
+      bio: 'filiated with several local clinics. He  his medical degree from ',
+      profileImageUrl: 'assets/icons/bubbles.jpg',
       category: DoctorCategory.dermatology,
       address: DoctorAddress.sampleAddresses[0],
       packages: DoctorPackage.samplePackages,
@@ -93,10 +89,9 @@ class Doctor extends Equatable {
     ),
     Doctor(
       id: '4',
-      name: 'Dr. Maryam Saeed',
-      bio: 'Dr. Maryam Saeed is an emergency medicine specialist in Lahore, Pakistan, affiliated with Adil Hospital. She earned her medical degree from the University of Medical Sciences and has over 10 years of experience in emergency medicine. ',
-      profileImageUrl:
-      'assets/icons/bubbles.jpg',
+      name: 'Dr. hannah',
+      bio: 'Dr.  She earned her medical  ',
+      profileImageUrl: 'assets/icons/bubbles.jpg',
       category: DoctorCategory.emergencyMedicine,
       address: DoctorAddress.sampleAddresses[0],
       packages: DoctorPackage.samplePackages,
@@ -107,10 +102,10 @@ class Doctor extends Equatable {
     ),
     Doctor(
       id: '5',
-      name: 'Dr. Usman Asif',
-      bio: ' Dr. Usman Asif is a dentist in Islamabad, Pakistan, affiliated with several dental clinics in the city. He received his dental degree from the University of Dental Sciences and has been in practice for over 10 years. ',
-      profileImageUrl:
-      'assets/icons/bubbles.jpg',
+      name: 'Dr. amira',
+      bio:
+          ' Dr. U his dental degree from the University of Dental Sciences and has . ',
+      profileImageUrl: 'assets/icons/bubbles.jpg',
       category: DoctorCategory.dentist,
       address: DoctorAddress.sampleAddresses[0],
       packages: DoctorPackage.samplePackages,
@@ -121,10 +116,9 @@ class Doctor extends Equatable {
     ),
     Doctor(
       id: '6',
-      name: 'Dr. Umna Abid',
-      bio: 'Dr. Umna Abis is an anesthesiologist in Lahore, Pakistan, affiliated with multiple hospitals in the area. She received her medical degree from the University of Medical Sciences and has been in practice for over 10 years.',
-      profileImageUrl:
-      'assets/icons/bubbles.jpg',
+      name: 'Dr. chaima',
+      bio: 'Dr. is an anesthesiologist',
+      profileImageUrl: 'assets/icons/bubbles.jpg',
       category: DoctorCategory.anesthesiology,
       address: DoctorAddress.sampleAddresses[0],
       packages: DoctorPackage.samplePackages,

@@ -4,7 +4,6 @@ import 'package:doctor_app/shared/widgets/titles/section_title.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:models/models.dart';
-import '../shared/widgets/bottom_nav_bars/main_nav_bar.dart';
 import '../shared/widgets/list_tiles/doctor_list_tile.dart';
 import '../state/home/_bloc.dart';
 
@@ -45,7 +44,7 @@ class HomeView extends StatelessWidget {
               height: 4,
             ),
             Text(
-              'Hafsa Abid',
+              'aya kechroud',
               style: textTheme.bodyLarge!.copyWith(fontWeight: FontWeight.bold),
             ),
             const SizedBox(
@@ -61,7 +60,7 @@ class HomeView extends StatelessWidget {
                   width: 4,
                 ),
                 Text(
-                  'Lahore, Pakistan',
+                  'souk ahras,dz',
                   style: textTheme.bodySmall!
                       .copyWith(color: colorScheme.secondary),
                 ),
@@ -133,7 +132,6 @@ class HomeView extends StatelessWidget {
           }
         },
       ),
-      bottomNavigationBar: const MainNavBar(),
     );
   }
 }

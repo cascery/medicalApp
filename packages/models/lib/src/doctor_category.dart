@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
 
-enum DoctorCategory{
+enum DoctorCategory {
 
-  // These ae the categories of doctors
-
-  anesthesiology(
-    name: 'Anesthesiology',
-    icon: Icons.account_circle_outlined
-  ),
+  anesthesiology(name: 'Anesthesiology', icon: Icons.account_circle_outlined),
   cardiology(
     name: 'Cardiology',
     icon: Icons.favorite_border_outlined,
@@ -61,9 +56,7 @@ enum DoctorCategory{
     icon: Icons.medical_services_outlined,
   );
 
-  // passing name and icon
   final String name;
   final IconData icon;
-  const DoctorCategory({required this.name, required this.icon });
-
+  const DoctorCategory({required this.name, required this.icon});
 }

@@ -1,11 +1,12 @@
-import 'package:doctor_app/state/home/_bloc.dart';
-import 'package:flutter/foundation.dart';
+import 'package:doctor_app/app/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
+import 'package:get/get.dart';
 import 'repositories/doctor_repository.dart';
-import 'screens/home_screen.dart';
 import 'shared/theme/app_theme.dart';
+import 'shared/widgets/bottom_nav_bars/main_nav_bar.dart';
+import 'state/home/_bloc.dart';
+// Make sure this is imported
 
 void main() {
   const doctorRepository = DoctorRepository();
@@ -22,11 +23,10 @@ class AppScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return MultiRepositoryProvider(
       providers: [
         RepositoryProvider.value(value: doctorRepository),
-        // Create other instances of repositories to make available to the app
+        // Add other repositories if needed
       ],
       child: MultiBlocProvider(
         providers: [
@@ -35,11 +35,13 @@ class AppScreen extends StatelessWidget {
               ..add(LoadHomeEvent()),
           ),
         ],
-        child: MaterialApp(
+        child: GetMaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Doctor Booking Application',
           theme: const AppTheme().themeData,
-          home: const HomeScreen(),
+          initialRoute: AppPages.initial, // Set initial route from AppPages
+          getPages: AppPages.routes, // Use the routes defined in AppPages
+          home: const MainNavBar(), // This can still be used as your main page
         ),
       ),
     );
